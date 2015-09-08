@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1441730787 "review_quiz1.tex" "review_quiz1.pdf" "review_quiz1" 1441730789
+["pdflatex"] 1441730927 "review_quiz1.tex" "review_quiz1.pdf" "review_quiz1" 1441730929
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc" 1354061736 2960 1186daedd110e2cd2514b25ddc70746e ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc" 1354061736 2988 47fc38f815d6dd9a7be7c8f2e46aaa0c ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc" 1354061736 3508 503f1ff84ace0b5278a40100f0c9090b ""
@@ -100,11 +100,11 @@
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1401025990 3832012 904d82bdcc8abf2b1cd296990b82553b ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "graphs/x2_right_up.png" 1441718902 15271 ffa72cf382a4b3e711ba39566ba0453d ""
-  "review_quiz1.aux" 1441730789 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "review_quiz1.out" 1441730788 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "review_quiz1.tex" 1441730787 3952 2a87fac3bb7d7d685dfa3236c1a9eeba ""
+  "review_quiz1.aux" 1441730929 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "review_quiz1.out" 1441730928 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "review_quiz1.tex" 1441730927 3953 79f77b0bec438f9acd7623c4f72ed6f2 ""
   (generated)
-  "review_quiz1.aux"
-  "review_quiz1.log"
-  "review_quiz1.pdf"
   "review_quiz1.out"
+  "review_quiz1.aux"
+  "review_quiz1.pdf"
+  "review_quiz1.log"
