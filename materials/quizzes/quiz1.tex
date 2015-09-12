@@ -1,0 +1,147 @@
+
+
+\documentclass[a4paper, 12pt]{article} 
+\usepackage{amsmath, amssymb, color, graphicx, enumitem}
+\usepackage{fullpage} %smaller margins
+\usepackage{hyperref} % hyperlinks
+
+%font
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palladio needs more leading (space between lines)
+%\usepackage[T1]{fontenc}
+
+%font, libertine
+\usepackage{libertine}
+
+%word spacing
+\usepackage{microtype}
+
+%all equations get full space
+\everymath{\displaystyle}
+
+%useful shortcuts
+\def\R{\ensuremath{\mathbb{R}}} %\ensuremath adds math mode, if forgotten
+\def\Q{\ensuremath{\mathbb{Q}}}
+\def\N{\ensuremath{\mathbb{N}}}
+\def\Z{\ensuremath{\mathbb{Z}}}
+\def\C{\ensuremath{\mathbb{C}}}
+
+%shorcuts with arguments
+\newcommand{\abs}[1]{\left\vert#1\right\vert} %nice absolute values
+\newcommand{\bt}[1]{\textbf{#1}} %bold
+\newcommand{\eq}[1]{\begin{align*}#1\end{align*}} %aligned equations
+\newcommand{\cb}[1]{\centerline{\fbox{#1}}} %centered box
+\newcommand{\bp}[1]{\fbox{\parbox{0.8\textwidth}{#1}}} %box paragraph
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert} %vector norm
+\newcommand{\notimplies}{% does not imply
+  \mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+\renewcommand{\eq}[1]{\begin{align*}#1\end{align*}} %aligned equations
+
+
+%colors
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} %dark green color
+\newcommand{\green}[1]{\textcolor{javagreen}{#1}} %command for green
+\newcommand{\gray}[1]{\textcolor[gray]{0.5}{#1}} %gray text
+
+%environment
+\newcommand{\tab}{\phantom{ssss}}
+
+
+\title{}
+\date{}
+%==tips====
+%part
+    %section, sub, sub
+%\begin{enumerate}[resume] %continues counting
+\begin{document}
+\begin{center}
+\section*{Quiz 1}
+Fundamentals of Calculus I
+\end{center}
+
+Name: \underline{\hspace{5cm}} \\
+
+\bt{Explain and justify your thought process.}
+
+Write your answers in the space provided.
+
+\begin{enumerate}
+    \item What's the equation of the line going through $(2, 5)$ and $(3, 10)$?\\
+    \vspace{6cm}
+
+    \item For $f(x) = 1x + 5$ and $g(x) = 3x + 10$, find all solutions to $3x = g(f(x))$. \\
+    \vspace{6cm}
+
+    \item Graph $x^2 + 4x + 10$.
+    
+    \vspace{6cm}
+
+    \item Find all solutions to $x^2 + 4x + 10 = 5$ (hint: see previous question).
+
+    \vspace{6cm}
+   For questions 5 and 6, note Apple can build an iphone 6 factory for \$100,000. Each iphone costs \$100 to produce. 
+    \item What's the total cost of producing 800 iphones? \\
+
+    \vspace{6cm}
+    \item If Apple sells each iphone for \$500, how many iphones does Apple need to sell to earn \$80,000 in profit?
+    \vspace{6cm}
+\end{enumerate}
+
+\newpage
+\centerline{\bt{Solutions}}
+\begin{enumerate}
+    \item What's the equation of the line going through $(2, 5)$ and $(3, 10)$?\\
+    \green{
+    First we find the slope. Slope answers the question: how much does y change by when $x$ increases by 1?\\
+    When $x$ inceases by 1, $y$ increases from 5 to 10, implying the slope is 5.
+    Therefore we have $y = 5x + b \implies 5 = 10 + b \implies b = -5$. Thus the equation of the line is $y = 5x -5$.
+    }
+
+    \item For $f(x) = 1x + 5$ and $g(x) = 3x + 10$, find all solutions to $3x = g(f(x))$. \\
+    \green{
+    No solution, as the lines are parallel after evaluating the function:
+    \eq{
+    g(f(x)) &= 3(x+5) +10  \\
+    & = 3x + 15 + 10  = 3x + 25.}
+    }
+    \item Graph $x^2 + 4x + 10$.
+    \green{
+    Complete the square to understand the function:
+    \eq{
+    x^2 + 4x + 10 = (x+2)^2 + 6
+    }
+    Therefore the function is $x^2$ shifted to the left by 2 and up by 6.
+    }
+
+    \item Find all solutions to $x^2 + 4x + 10 = 5$ (hint: see previous question).
+    \green{
+    We determined the function is $x^2$ shifted to the left by 2 and up by 6. Thus, the function never achieves a value of 5, meaning there are no solutions.
+    }
+
+
+   For questions 5 and 6, note Apple can build an iphone 6 factory for \$100,000. Each iphone costs \$100 to produce. 
+    \item What's the total cost of producing 800 iphones? \\
+    \green{if we let $x$ be the number of iphones we have: 
+    cost = 100 x + 100,000
+    We evaluate our function at an input of 800: 
+    cost = 100*800 + 100,000 = 80,000 + 100,000 = 180,000.
+    }
+
+    \item If Apple sells each iphone for \$500, how many iphones does Apple need to sell to earn \$80,000 in profit?
+    \green{
+    If $x$ is the number of iphones sold, 
+    \eq{
+    \text{profit} &= 500 x - \text{cost } \\
+    & = 500x - (100x + 100,000) \\
+    & = 400x - 100,000.
+    }
+    We need to find the input (number of iphones sold) that generates an output (profit) of 80,000: 
+    \eq{
+    80,000 = 400x - 100,000 \implies 180,000/400 = x = 450.
+    }
+    Therefore, Apple needs to sell 450 iphones to earn 80,000 in profit. 
+    }
+\end{enumerate}
+
+\end{document}
+
