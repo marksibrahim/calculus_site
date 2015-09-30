@@ -95,4 +95,109 @@ Write your answers in the space provided. No calculators allowed.
 
 \bt{Bonus} (+1 point): How many digits are in $8^{1000}$ ? (hint: $\log 2 = .3010$) 
 
+\newpage
+
+\section*{Solutions}
+
+\bt{Explain and justify your thought process.}
+
+Write your answers in the space provided. No calculators allowed.
+
+\begin{enumerate}
+    \item Find all solutions to $\frac{1}{e^x} = e^{5(x+2)}$.
+
+    \green{
+    We want to find $x$ values such that 
+    \eq{
+    e^{-x} = e^{5(x+2)}.
+    }
+    So, $-x = 5x + 10 \implies -5/3$.
+    }
+    \item Solve $\log_5 ((25)^{100}) = (x-1)(x-5) + 195$.
+
+    \green{
+    Using the definition of $\log$, we have
+    \eq{
+    5^{(x-1)(x-5)+195} &= 25^{100} \\
+    & = 5^{200}.
+    }
+    Therefore, $(x-1)(x-5) + 195 = 200$, meaning $(x-1)(x-5) = 5$. \\
+    Now we solve, 
+    \eq{
+    x^2 -6x + 5 = 5 \implies x(x-6) = 0 
+    }
+    So we have $x = 0$ or $x = 6$.
+    }
+    \item What is the minimum value of $x^2 + 8x + 15$ ?
+
+    \green{
+    We can determine the minimum value by relating the function to $x^2$: 
+    \eq{
+    x^2 + 8x + 15 &= (x+4)^2 -1 
+    }
+    The function is $x^2$ shifted to the left by 4 and down by -1.  \\
+    Therefore, the minimum value of the function is -1.
+    }
+    \item Find all solutions to $\log_2 (x^2 - 6x) = 3 + \log_2 (1-x)$.
+
+    \green{
+    We can rewrite the equation as 
+    \eq{
+    \log_2(x^2 - 6x) - \log_2(1-x) = 3.
+    }
+    Next we rewrite the logarithms as 
+    \eq{
+    \log_2(x^2 -6x) + \log_2(1-x)^{-1} &= 
+    \log_2((x^2 - 6x)(1-x)^{-1}) = 3.\\
+    }
+    By the definition of $\log$ we have
+    \eq{
+    2^3 = (x^2 - 6x)(1-x)^{-1}
+    }
+    So, 
+    \eq{
+    8 - 8x = x^2 -6x \implies x^2 +2x - 8 = 0\\
+    \implies (x+1)^2 -7 = 0 \implies x = -1 \pm \sqrt{7}.
+    }
+    }
+\end{enumerate}
+
+
+\bt{No justification necessary.}
+\begin{enumerate}[resume]
+    \item Sketch the graph of $x^{100} + \pi$.
+
+    \includegraphics{graphs/x_100_pi.png}
+
+\green{    The shape is parabolic with a y-intercept of $\pi$.}
+    \item Provide one application where logarithms are useful.
+    \green{
+    Answers can range from measuring PH levels to making large numbers (like the hotness of a pepper) human-friendly.
+    }
+\end{enumerate}
+
+\bt{True or False. No justification necessary.}
+\begin{enumerate}[resume]
+    \item \underline{\green{False}} The horizontal asymptote of $\frac{4}{x-5} + 8$ is 5.
+    \item \underline{\green{False}} $\log_a (x + y) = \log_a (x) * \log_a (y)$
+    \item \underline{\green{False}} The domain of $\log_3 x$  is all real number except 0. \\
+\end{enumerate}
+
+\bt{Bonus} (+1 point): How many digits are in $8^{1000}$ ? (hint: $\log 2 = .3010$) \\
+
+\green{
+We know $\log 8^{1000}$ is the power we need to raise ten by to get $8^{1000}$. \\
+This gives us the number of digits in 10s, 100th, 1000th, $\dots$ places. \\
+So 
+$8$ has $\log 8^{1000}$ + 1 digits (rounded down). \\
+To compute $\log 8^{1000}$ we have
+\eq{
+\log 8^{1000} &= 100 \log 8 \\
+&= 100 \log 2^3 = 300 \log 2  \\
+& = 300 * .3010 = 903
+}
+Therefore, $\log 8^{1000}$ has 904 digits.
+}
+
+
 \end{document}
