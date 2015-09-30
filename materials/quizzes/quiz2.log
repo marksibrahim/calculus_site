@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  29 SEP 2015 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  30 SEP 2015 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,29 +478,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
 [4 <./graphs/x_100_pi.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on input line 207.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 207.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
 (./quiz2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `quiz2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 9432 strings out of 493117
- 148726 string characters out of 6135433
+ 9471 strings out of 493117
+ 149823 string characters out of 6135433
  256010 words of memory out of 5000000
- 12734 multiletter control sequences out of 15000+600000
- 15165 words of font info for 44 fonts, out of 8000000 for 9000
+ 12762 multiletter control sequences out of 15000+600000
+ 16141 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,51p,239b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on quiz2.pdf (4 pages, 237366 bytes).
+ 49i,8n,51p,278b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on quiz2.pdf (5 pages, 239735 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 7174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 7686 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -164,9 +164,15 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/libertine/LinLibertine
 INPUT graphs/x_100_pi.png
 INPUT ./graphs/x_100_pi.png
 INPUT ./graphs/x_100_pi.png
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
 INPUT quiz2.aux
 INPUT ./quiz2.out
 INPUT ./quiz2.out
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb
