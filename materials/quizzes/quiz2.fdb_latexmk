@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1443660937 "quiz2.tex" "quiz2.pdf" "quiz2" 1443660948
+["pdflatex"] 1443661870 "quiz2.tex" "quiz2.pdf" "quiz2" 1443661872
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc" 1354061736 2960 1186daedd110e2cd2514b25ddc70746e ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc" 1354061736 2988 47fc38f815d6dd9a7be7c8f2e46aaa0c ""
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc" 1354061736 3508 503f1ff84ace0b5278a40100f0c9090b ""
@@ -100,11 +100,11 @@
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1401025990 3832012 904d82bdcc8abf2b1cd296990b82553b ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "graphs/x_100_pi.png" 1443573769 13442 6401080f83b71427f2f535349f2fab65 ""
-  "quiz2.aux" 1443660938 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "quiz2.out" 1443660938 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "quiz2.tex" 1443660947 6575 f73081791ef3e7843434c0bfa8dfeba0 ""
+  "quiz2.aux" 1443661871 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "quiz2.out" 1443661871 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "quiz2.tex" 1443661870 6904 b9396914436846eb96391172506a9150 ""
   (generated)
-  "quiz2.pdf"
   "quiz2.out"
   "quiz2.aux"
+  "quiz2.pdf"
   "quiz2.log"
