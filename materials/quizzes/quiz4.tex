@@ -1,0 +1,140 @@
+
+\documentclass[a4paper, 12pt]{article} 
+\usepackage{amsmath, amssymb, color, graphicx, enumitem}
+\usepackage{fullpage} %smaller margins
+\usepackage{hyperref} % hyperlinks
+
+%font
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palladio needs more leading (space between lines)
+%\usepackage[T1]{fontenc}
+
+%font, libertine
+\usepackage{libertine}
+
+%word spacing
+\usepackage{microtype}
+
+%all equations get full space
+\everymath{\displaystyle}
+
+%useful shortcuts
+\def\R{\ensuremath{\mathbb{R}}} %\ensuremath adds math mode, if forgotten
+\def\Q{\ensuremath{\mathbb{Q}}}
+\def\N{\ensuremath{\mathbb{N}}}
+\def\Z{\ensuremath{\mathbb{Z}}}
+\def\C{\ensuremath{\mathbb{C}}}
+
+%shorcuts with arguments
+\newcommand{\abs}[1]{\left\vert#1\right\vert} %nice absolute values
+\newcommand{\bt}[1]{\textbf{#1}} %bold
+\newcommand{\eq}[1]{\begin{align*}#1\end{align*}} %aligned equations
+\newcommand{\cb}[1]{\centerline{\fbox{#1}}} %centered box
+\newcommand{\bp}[1]{\fbox{\parbox{0.8\textwidth}{#1}}} %box paragraph
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert} %vector norm
+\newcommand{\notimplies}{% does not imply
+  \mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+\renewcommand{\eq}[1]{\begin{align*}#1\end{align*}} %aligned equations
+
+
+%colors
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} %dark green color
+\newcommand{\green}[1]{\textcolor{javagreen}{#1}} %command for green
+\newcommand{\gray}[1]{\textcolor[gray]{0.5}{#1}} %gray text
+
+%environment
+\newcommand{\tab}{\phantom{ssss}}
+
+
+\title{}
+\date{}
+%==tips====
+%part
+    %section, sub, sub
+%\begin{enumerate}[resume] %continues counting
+\begin{document}
+\begin{center}
+\section*{Quiz 4}
+Fundamentals of Calculus I
+\end{center}
+
+Last 4 Digits of Student ID: \underline{\hspace{5cm}} \\
+
+\bt{Explain and justify your thought process.}
+
+\begin{enumerate}
+    \item Find the slope of the tangent line to the function 
+    $(1+2x + 3x^2)(5x +8x^2-x^3)(2x)$ at $x=1$.
+    \vspace{4cm}
+\end{enumerate}
+
+\bt{No justification necessary.}
+
+\begin{enumerate}[resume]
+    \item When is the product rule useful?
+    \vspace{2cm}
+    \item State the limit definition of continuity.
+    \vspace{2cm}
+    \item Find the derivative of $\frac{1}{x}$.
+    \vspace{2cm}
+\end{enumerate}
+
+\bt{True or False. No justification necessary.}
+
+\begin{enumerate}[resume]
+    \item \underline{\hspace{1.5cm}} $\frac{d}{dx} \pi = 0$
+    \item \underline{\hspace{1.5cm}} The y-intercept of the secant line is the derivative
+    \item \underline{\hspace{1.5cm}} The derivative of a function is also a function
+\end{enumerate}
+
+\newpage
+
+\bt{Explain and justify your thought process.}
+
+\begin{enumerate}
+    \item Find the slope of the tangent line to the function 
+    $(1+2x + 3x^2)(5x +8x^2-x^3)(2x)$ at $x=1$. \\
+    \green{
+    The slope of the tangent line at $x=1$ is the value of the derivative at 1.
+    To find the derivative, we have two options: \\
+    * multiply the expression and use the power rule \\
+    * group the expression as the product of two functions and use the product rule \\
+    For the product rule, we call \\
+    $f(x) = 1 + 2x + 3x^2$ \\ and $g(x) = 10x^2 + 16x^3 - 2x^4$.\\
+    Then by the power rule, $f'(x) = 2 + 6x$\\ and $g'(x) = 20x + 48x^2 -8x^3.$ \\
+    By the product rule the derivative is 
+    \eq{ f(x) g'(x) + g(x)f'(x)  
+    &= (1+2x+3x^2)(20x+48x^2-8x^3)  \\
+    &\ \ \ \ + (10x^2+16x^3-2x^4)(2+6x)
+    }
+    At x =1, this expression equals 
+    $$(1 + 2 + 3)(20 + 48-8) + (10 + 16 -2)(2+6) = 6*60 + 24*8 = 552.$$
+    Therefore, the slope of the tanget line at $x=1$ is 552.
+    }
+\end{enumerate}
+
+\bt{No justification necessary.}
+
+\begin{enumerate}[resume]
+    \item When is the product rule useful? \\
+    \green{The product rule is used to find the derivative of a function comprised of two functions
+    multiplied by one another.
+    }
+    \item State the limit definition of continuity at a point $x=c$. \\
+    \green{$\lim_{x \rightarrow c} f(x) = f(c)$
+    }
+    
+    \item Find the derivative of $\frac{1}{x}$. \\
+    \green{First rewrite the function as $x^{-1}$ then use the power rule: 
+    $-x^{-2}$.
+    }
+\end{enumerate}
+
+\bt{True or False. No justification necessary.}
+
+\begin{enumerate}[resume]
+    \item \green{True} $\frac{d}{dx} \pi = 0$
+    \item \green{False} The y-intercept of the secant line is the derivative
+    \item \green{True} The derivative of a function is also a function
+\end{enumerate}
+\end{document}
