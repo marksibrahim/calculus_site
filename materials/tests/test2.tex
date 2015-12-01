@@ -1,0 +1,216 @@
+
+
+\documentclass[a4paper, 12pt]{article} 
+\usepackage{amsmath, amssymb, color, graphicx, enumitem}
+\usepackage{fullpage} %smaller margins
+\usepackage{hyperref} % hyperlinks
+
+%font
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palladio needs more leading (space between lines)
+%\usepackage[T1]{fontenc}
+
+%font, libertine
+\usepackage{libertine}
+
+%word spacing
+\usepackage{microtype}
+
+%all equations get full space
+\everymath{\displaystyle}
+
+%useful shortcuts
+\def\R{\ensuremath{\mathbb{R}}} %\ensuremath adds math mode, if forgotten
+\def\Q{\ensuremath{\mathbb{Q}}}
+\def\N{\ensuremath{\mathbb{N}}}
+\def\Z{\ensuremath{\mathbb{Z}}}
+\def\C{\ensuremath{\mathbb{C}}}
+
+%shorcuts with arguments
+\newcommand{\abs}[1]{\left\vert#1\right\vert} %nice absolute values
+\newcommand{\bt}[1]{\textbf{#1}} %bold
+\newcommand{\eq}[1]{\begin{align*}#1\end{align*}} %aligned equations
+\newcommand{\cb}[1]{\centerline{\fbox{#1}}} %centered box
+\newcommand{\bp}[1]{\fbox{\parbox{0.8\textwidth}{#1}}} %box paragraph
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert} %vector norm
+\newcommand{\notimplies}{% does not imply
+  \mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+\renewcommand{\eq}[1]{\begin{align*}#1\end{align*}} %aligned equations
+
+%piecewise function
+
+%\begin{displaymath}
+%   f(x) = \left\{
+%     \begin{array}{lr}
+%       1 & : x \in \mathbb{Q}\\
+%       0 & : x \notin \mathbb{Q}
+%     \end{array}
+%   \right.
+%\end{displaymath} 
+
+%colors
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} %dark green color
+\definecolor{lightblue}{rgb}{0.149,0.545,0.824} %solarized blue
+\definecolor{sred}{rgb}{0.863, 0.196, 0.184} %solarized red
+
+\newcommand{\blue}[1]{{\leavevmode\color{lightblue}{#1}}} %solarized blue 
+\newcommand{\green}[1]{{\leavevmode\color{javagreen}{#1}}} %command for green
+\newcommand{\red}[1]{{\leavevmode\color{sred}{#1}}} %solarized red
+\newcommand{\gray}[1]{{\leavevmode\color[gray]{0.5}{#1}}} %gray text
+
+%environment
+\newcommand{\tab}{\phantom{ssss}}
+
+\title{}
+\date{}
+%==tips====
+%part
+    %section, sub, sub
+%\begin{enumerate}[resume] %continues counting
+\begin{document}
+\begin{center}
+\section*{Test 2}
+Fundamentals of Calculus I\\
+\end{center}
+Name: \\
+\vspace{1cm}
+
+
+
+Write your answers in the space provided.
+
+\bt{Explain and justify your thought process.}
+
+
+    \begin{enumerate}
+        \item Find the instantaneous rate of change of $f(x) = e^{2x}\ln(xe^x + 1)$ at 
+        $x = 2$.
+       
+        \vspace{8cm}
+
+        \item The world population is modeled by $P(t) = 2560 e^{0.01785* t}$, where
+        $t$ is the number of years since $1950$. 
+        At what rate is the population growing now in $2015$?
+        \vspace{8cm}
+    \end{enumerate}
+
+\newpage
+
+\bt{No justification necessary.}
+
+\begin{enumerate}[resume]
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} What is the domain of $\frac{3}{x^2 - 36}$?
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} Find $\frac{dy}{dt}$ for $y(t) = \sqrt{2t^7 - 5}$.
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} What is slope of the tangent line of $f(x) = \pi$ at $x=3$?
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} Find the value of $\lim_{x \rightarrow \infty} \frac{2}{3} + \frac{2}{x^2}$.
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} Evaluate $\log_2(\log_3(\log_4 64))$
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} What are the minimum and maximum values of \\
+        \hspace*{5cm} $x^2 + 8x + 35$?
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} Find the derivative of $(5x^3 -1)^6$.
+        \vspace{1cm}
+        \item \underline{\hspace{5cm}} For $f(x) = 1x + 5$ and $g(x) = 3x + 10$, \\
+        \hspace*{5cm} find all solutions to $3x = g(f(x))$.
+        \vspace{1cm}
+        \item Explain the meaning of $\lim_{x \rightarrow 3} f(x) = 5$.
+        \vspace{2cm}
+        \item State the limit definition of a derivative.
+        \vspace{2cm}
+\end{enumerate}
+
+
+\newpage
+
+\section*{Solutions}
+
+Write your answers in the space provided.
+
+\bt{Explain and justify your thought process.}
+
+
+    \begin{enumerate}
+        \item Find the instantaneous rate of change of $f(x) = e^{2x}\ln(xe^x + 1)$ at 
+        $x = 2$.
+
+        \green{The instantaneous rate of change is the value of the
+        derivative at $x=2$. 
+        To find the derivative we first use the product rule:
+        $f'(x) = e^{2x} * \frac{d}{dx} ln(xe^x +1) + ln(xe^x + 1) 
+        \frac{d}{dx} e^{2x}.$ 
+
+        To find $\frac{d}{dx} ln(xe^x + 1)$ we use the chain rule to obtain
+        $$\frac{1}{xe^x +1} * \frac{d}{dx} xe^x
+        = \frac{xe^x + e^x}{xe^x +1},$$
+        since $\frac{d}{dx} xe^x = xe^x + e^x$ by the product rule.
+        
+        Therefore, 
+        $$f'(x) = \frac{e^{2x} * (x e^x + e^x)}{xe^x + 1} + 2\ln(xe^x + 1) e^{2x}.$$
+        At $x=2$, 
+        $$f'(2) =  \frac{e^{4} * (2 e^2 + e^2)}{2e^2 + 1} + 2\ln(2e^2 + 1) e^{4}.$$
+        }
+
+        \item The world population is modeled by $P(t) = 2560 e^{0.01785* t}$, where
+        $t$ is the number of years since $1950$. 
+        At what rate is the population growing now in $2015$?
+
+        \green{To find the instantaneous rate of growth in 2015, we need to compute the derivative of $P(t)$.
+
+        By the chain rule we have, 
+        $P'(t) = 2560*(0.01785) e^{0.01785*t}$.
+        Today in 2015 is equivalent to $t = 65$. 
+        Thus the rate at which the population is growing today in 2015 is
+        $$P'(65) = 2560*(0.01785)*e^{0.01785*65} = 145.80$$
+        (that's in millions)
+        }
+    \end{enumerate}
+
+\newpage
+
+\bt{No justification necessary.}
+
+\begin{enumerate}[resume]
+        \item  What is the domain of $\frac{3}{x^2 - 36}$?\\
+        \green{all real number except 6 and -6}
+
+        \vspace{1cm}
+        \item Find $\frac{dy}{dt}$ for $y(t) = \sqrt{2t^7 - 5}$.\\
+        \green{$\frac{7t^6}{\sqrt{2t^7-5}}$}
+
+        \vspace{1cm}
+        \item What is slope of the tangent line of $f(x) = \pi$ at $x=3$?\\
+        \green{0}
+        \vspace{1cm}
+        \item Find the value of $\lim_{x \rightarrow \infty} \frac{2}{3} + \frac{2}{x^2}$.\\
+        \green{$\frac{2}{3}$}
+        \vspace{1cm}
+        \item Evaluate $\log_2(\log_3(\log_4 64))$\\
+        \green{0}
+
+        \vspace{1cm}
+        \item What are the minimum and maximum values of \\
+        \hspace*{5cm} $x^2 + 8x + 35$? \\
+        \green{max is infinity; min is 19}
+
+        \vspace{1cm}
+        \item Find the derivative of $(5x^3 -1)^6$.\\
+        \green{$6(5x^3-1)^5*15x^2$}
+
+        \vspace{1cm}
+        \item For $f(x) = 1x + 5$ and $g(x) = 3x + 10$, \\
+        \hspace*{5cm} find all solutions to $3x = g(f(x))$.\\
+        \green{no solution}
+        \vspace{1cm}
+        \item Explain the meaning of $\lim_{x \rightarrow 3} f(x) = 5$. \\
+        \green{$f(x)$ approaches $5$ when $x$ is close to $3$.}
+
+        \item State the limit definition of a derivative. \\
+        \green{$\lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h}$}
+\end{enumerate}
+\end{document}
+
